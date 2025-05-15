@@ -43,8 +43,11 @@ Structure of DHACN. The module mainly consists of local and global dual paths an
 ## Getting Started
 ### Environment
 1.git clone https://github.com/democt-ct/DCAM-RTDETR.git
+
 2.Create a new conda environment and install dependencies:
+
 CUDA=11.8
+
 pip install -r requirements.txt
 
 ### train & infer
