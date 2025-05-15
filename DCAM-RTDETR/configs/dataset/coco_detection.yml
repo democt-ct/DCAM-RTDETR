@@ -1,0 +1,46 @@
+task: detection
+
+num_classes: 6
+remap_mscoco_category: True
+
+train_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    # pcb-dataset
+    img_folder: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/PCB_DATASET/train/
+    ann_file: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/PCB_DATASET/train.json
+    # img_folder: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/Deeppcb/dataset_coco/train/images/
+    # ann_file: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/Deeppcb/dataset_coco/annotations/train_coco_format.json
+    # img_folder: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/pcb-aol public dataset/train_data_augmentation/JPEGImages/
+    # ann_file: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/pcb-aol public dataset/train.json
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: True
+  batch_size: 8
+
+  num_workers: 8
+  drop_last: True 
+
+
+val_dataloader:
+  type: DataLoader
+  dataset: 
+    type: CocoDetection
+    #pcb-dataset
+    img_folder: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/PCB_DATASET/val/
+    ann_file: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/PCB_DATASET/val.json
+    # img_folder: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/Deeppcb/dataset_coco/val/images/
+    # ann_file: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/Deeppcb/dataset_coco/annotations/val_coco_format.json
+#    img_folder: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/pcb-aol public dataset/test_data/JPEGImages/
+#    ann_file: /media/democt/82F4E8B9F4E8B119/zhuomian/detr code/rtdetr code/RT-DETR-main/pcb-aol public dataset/val.json
+
+    transforms:
+      type: Compose
+      ops: ~ 
+
+  shuffle: False
+  batch_size: 8
+  num_workers: 8
+  drop_last: False
