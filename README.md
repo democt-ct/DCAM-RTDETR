@@ -19,4 +19,15 @@ Structure of the CAMF. The module mainly consists of Cascaded Hierarchical Featu
 ![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/DHACN.png)
 Structure of DHACN. The module mainly consists of local and global dual paths and a lightweight weight distribution network. In local attention, the output feature maps are weighted and fused with each local output feature map through dynamic weights. In global multi-scale attention, the outputs are mainly obtained by averaging, 1×1 convolution enables cross-channel feature integration through global correlation of channel dimensions.
 
-##Experimental Results
+## Experimental Results
+### Quantitative result
+
+
+### Visualization Results Comparison
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/deeppcbzong.png)
+The visualization result on the left is from YOLOv10, while the one on the right is from our method.
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/pcb可视化.drawio.png)
+Visualization of Our Method on the PCB-DATASET Dataset.
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/yolov10.drawio.png)
+Visualization of YOLOv10 on the PCB-DATASET Dataset.
+
