@@ -21,8 +21,10 @@ Structure of DHACN. The module mainly consists of local and global dual paths an
 
 ## Experimental Results
 ### Quantitative result
-
-
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/table3.png)
+Comparison with DeepPCB state-of-the-art methods.
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/table4.png)
+Comparison with PCB-DATASET state-of-the-art methods.
 ### Visualization Results Comparison
 ![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/deeppcbzong.png)
 The visualization result on the left is from YOLOv10, while the one on the right is from our method.
@@ -31,3 +33,31 @@ Visualization of Our Method on the PCB-DATASET Dataset.
 ![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/yolov10.drawio.png)
 Visualization of YOLOv10 on the PCB-DATASET Dataset.
 
+## Getting Started
+### Environment
+1.git clone https://github.com/democt-ct/DCAM-RTDETR.git
+2.Create a new conda environment and install dependencies:
+CUDA=11.8
+pip install -r requirements.txt
+
+### train & infer
+python tools/train.py
+
+python tools/infer.py
+
+### Datasets
+DeepPCB:https://github.com/tangsanli5201/DeepPCB
+PCB-DATASET:https://robotics.pkusz.edu.cn/resources/dataset/
+
+## Citation
+```
+@article{zhang2025dcam,
+  title={Hierarchical Feature Fusion and Dynamic Multi-Scale Attention for Precision PCB Defect Detection},
+  author={Lei Zhang, Xiaoqian Zhang, Shukai Yang, Quan Feng, Yufeng Chen, Jie Zhang},
+  journal={The Visual Computer},
+  year={2025},
+  publisher={Springer}
+}
+```
+## Acknowledgment
+A part of this code is adapted from the previous work: RT-DETR (https://github.com/lyuwenyu/RT-DETR).
