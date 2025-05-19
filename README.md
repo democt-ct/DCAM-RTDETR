@@ -31,14 +31,14 @@ Structure of DHACN. The module mainly consists of local and global dual paths an
 </center>
 <p align="center">Comparison with PCB-DATASET state-of-the-art methods.</p>
 ### Visualization Results Comparison
-![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/deeppcbzong.png)
-<p align="center">The visualization result on the left is from YOLOv10, while the one on the right is from our method.</p>
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/DeepPCB(1).png)
+<p align="center">
+Visualization results of our method and comparative algorithms on the DeepPCB dataset.</p>
 
-![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/pcb可视化.drawio.png)
-<p align="center">Visualization of Our Method on the PCB-DATASET Dataset.</p>
+![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/PCB-DATASET(1).png)
+<p align="center">
+Visualization results of our method and comparative algorithms on the PCB-DATASET dataset.</p>
 
-![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/yolov10.drawio.png)
-<p align="center">Visualization of YOLOv10 on the PCB-DATASET Dataset.</p>
 
 ## Getting Started
 ### Environment
