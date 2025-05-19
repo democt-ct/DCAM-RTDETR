@@ -31,6 +31,7 @@ Structure of DHACN. The module mainly consists of local and global dual paths an
 </center>
 <p align="center">Comparison with PCB-DATASET state-of-the-art methods.</p>
 ### Visualization Results Comparison
+
 ![image](https://github.com/democt-ct/DCAM-RTDETR/blob/main/DeepPCB(1).png)
 <p align="center">
 Visualization results of our method and comparative algorithms on the DeepPCB dataset.</p>
